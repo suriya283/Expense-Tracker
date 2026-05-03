@@ -1,0 +1,39 @@
+body{
+    background-color: lightcyan;
+}
+h2{
+    text-align: center;
+    background-color: powderblue;
+    width: 500px;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto;
+    border: 2px solid lightsteelblue;
+}
+.addForm{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 350px;
+    margin: 50px auto 100px auto;
+}
+button{
+    background-color: rgb(17, 94, 238);
+    color: white;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: white;
+    color: rgb(17, 94, 238);
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.row label{
+    width: 100px;
+}
+.row input{
+    flex: 1;
+}

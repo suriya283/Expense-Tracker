@@ -1,0 +1,32 @@
+[
+    {
+        "date": "09-03-2026",
+        "time": "19:57:21",
+        "category": "travel",
+        "expense": 6000
+    },
+    {
+        "date": "08-03-2026",
+        "time": "19:57:08",
+        "category": "travel",
+        "expense": 2000
+    },
+    {
+        "date": "08-03-2026",
+        "time": "12:02:20",
+        "category": "travel",
+        "expense": 5000
+    },
+    {
+        "date": "09-03-2026",
+        "time": "19:59:46",
+        "category": "food",
+        "expense": 2000
+    },
+    {
+        "date": "09-03-2026",
+        "time": "20:43:46",
+        "category": "food",
+        "expense": 7000
+    }
+]

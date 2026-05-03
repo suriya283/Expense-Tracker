@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View expense</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='view_expense.css')}}">
+<!--    <link rel="stylesheet" href="../static/view_expense.css">-->
+</head>
+<body>
+    <h2>View Expense</h2>
+    <form action="">
+        <select name="View expense" id="view expense">
+            <option selected disabled>Select an Option</option>
+            <option value="#">View All Expense</option>
+            <option value="#">View by Date</option>
+            <option value="#">View by Time</option>
+            <option value="#">View by Date and Time</option>
+            <option value="#">View by Date and category</option>
+        </select>
+    </form>
+</body>
+</html>

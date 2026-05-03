@@ -1,0 +1,80 @@
+body{
+    background-color: powderblue;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    border: 10px;
+    padding: 20px;
+    background-color: rgb(77, 24, 126);
+    border-radius: 10px;
+    border: solid rgb(65, 9, 117) 5px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: rgb(187, 154, 217);
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+}
+span{
+    background-color: mediumslateblue;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    border: solid slateblue 5px;
+}
+.options a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    
+}
+.options li:hover{
+    background-color: royalblue;
+}
+
+.options li:hover a{
+    color: whitesmoke;
+}
+
+.options li:hover::marker{
+    color: whitesmoke;
+}
+h2{
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+}
+.options{
+    background-color: steelblue;
+    font-style: italic;
+    width: 350px;
+    padding: 20px;
+    margin: 30px auto;
+    border: solid royalblue 5px;
+    border-radius:10px ;
+    margin-top: 40px;
+}
+ol li {
+    margin-bottom: 15px;
+    background-color:cornflowerblue;
+    border: 1px solid deepskyblue;
+    line-height: 1.4;
+    width: fit-content;
+    padding: 5px;
+    border: solid blue 2px;
+}
+ol{
+    list-style-position: inside;
+}
+li::marker{
+    font-weight: bolder;
+}
