@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aba100b-e5fa-428f-ada0-87500cd82530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/wad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wad.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Lib/site-packages/flask-3.1.3.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Lib/site-packages/flask-3.1.3.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Lib/site-packages/pip-24.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Lib/site-packages/pip-24.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/flask.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/flask.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pip.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pip3.11.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.11.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/pip3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wad.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI pages.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_expense.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_expense.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,26 +27,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;suriya283&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "suriya283"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:suriya283/Expense-Tracker.git&quot;,
-    &quot;accountId&quot;: &quot;04765c34-1a3d-410c-8124-27a67d1a1e4e&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:suriya283/Expense-Tracker.git",
+    "accountId": "04765c34-1a3d-410c-8124-27a67d1a1e4e"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="3DFm94iNlRzG7kWzY41Pxm9pipa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,7 +65,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/Expense Tracker",
@@ -120,7 +121,6 @@
       <option name="presentableId" value="Default" />
       <updated>1777886038193</updated>
       <workItem from="1777886039403" duration="4184000" />
-      <workItem from="1777898244895" duration="297000" />
     </task>
     <servers />
   </component>
