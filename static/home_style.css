@@ -18,24 +18,11 @@ body{
 .navbar a:hover{
     color: rgb(187, 154, 217);
 }
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    text-align: center;
-    margin-top: 40px;
-}
-span{
-    background-color: mediumslateblue;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    border: solid slateblue 5px;
-}
+
 .options a{
     text-decoration: none;
     color: black;
     font-size: larger;
-    
 }
 .options li:hover{
     background-color: royalblue;

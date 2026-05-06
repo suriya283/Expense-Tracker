@@ -1,5 +1,6 @@
 body{
-    background-color: lightcyan;
+    margin: 150px;
+    background-color: light-dark(black,white);
 }
 h2{
     text-align: center;
@@ -16,7 +17,7 @@ h2{
     width: 350px;
     margin: 50px auto 100px auto;
 }
-button{
+.button button{
     background-color: rgb(17, 94, 238);
     color: white;
     font-weight: bolder;
@@ -26,10 +27,15 @@ button:hover{
     background-color: white;
     color: rgb(17, 94, 238);
 }
+.button{
+    display: flex;
+    gap: 30px;
+}
 .row{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    color: white;
 }
 .row label{
     width: 100px;

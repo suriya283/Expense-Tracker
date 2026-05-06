@@ -1,13 +1,16 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for, flash
 from DB import get_db_connection, insert_expense
 
 app=Flask(__name__)
-
+app.secret_key="secret123"
 @app.route('/')
+def login():
+    return render_template('login_page.html')
+@app.route('/home')
 def home():
     return render_template('home.html')
 
-cursor=get_db_connection()
+
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method=='POST':
@@ -16,8 +19,8 @@ def add():
         category = request.form['category']
         expense = int(request.form['expense'])
         insert_expense(date,time,category,expense)
-
-        return "stored successfully"
+        flash("stored successfully")
+        return redirect(url_for("add"))
     return render_template('add_expense.html')
 
 @app.route('/view')
