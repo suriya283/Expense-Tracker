@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import cursor
 
 
 def get_db_connection():
@@ -22,3 +23,14 @@ def insert_expense(date,time,category,amount):
 
     cursor.close()
     db.close()
+def view_expense():
+    conn=get_db_connection()
+    cursor = conn.cursor(dictionary=True)
+
+    cursor.execute("SELECT date,time,category,expense FROM expenses")
+    data=cursor.fetchall()
+
+    cursor.close()
+    conn.close()
+
+    return data

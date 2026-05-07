@@ -2,3 +2,32 @@ h2{
     font-weight: bolder;
     font-style: italic;
 }
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.expense-table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.expense-table th{
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.expense-table td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-table tr:hover{
+    background-color: #f1f1f1;
+}

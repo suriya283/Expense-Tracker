@@ -9,18 +9,37 @@
 </head>
 <body>
     <h2>View Expense</h2>
-    <form action="">
+    <form method = "POST">
         <select name="View expense" id="view expense">
             <option selected disabled>Select an Option</option>
-            <option value="#">View All Expense</option>
-            <option value="#">View by Date</option>
-            <option value="#">View by Time</option>
-            <option value="#">View by Date and Time</option>
-            <option value="#">View by Date and category</option>
+            <option value="View All">View All Expense</option>
+            <option value="View Date">View by Date</option>
+            <option value="View Time">View by Time</option>
+            <option value="View Date and Time">View by Date and Time</option>
+            <option value="View Date and category">View by Date and category</option>
         </select>
         <button type="reset">Reset</button>
         <button onclick="window.location.href='{{ url_for('home') }}'" type="button">Go Back</button>
         <button type="submit">Submit</button>
     </form>
+<br>
+{% if expense %}
+<table border="1" class="expense-table">
+    <tr>
+        <th>DATE</th>
+        <th>TIME</th>
+        <th>CATEGORY</th>
+        <th>EXPENSE</th>
+    </tr>
+    {% for record in expense %}
+    <tr>
+        <td>{{ record.date }}</td>
+        <td>{{ record.time }}</td>
+        <td>{{ record.category }}</td>
+        <td>{{ record.expense }}</td>
+    </tr>
+    {% endfor %}
+{% endif %}
+</table>
 </body>
 </html>
