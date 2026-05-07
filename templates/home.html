@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense tracker</title>
     <link rel="stylesheet" href="{{url_for('static',filename='home_style.css')}}">
-<!--        <link rel="stylesheet" href="../static/home_style.css">-->
+    <link rel="stylesheet" href="../static/home_style.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="/">Home</a>
-        <a href="#">Dashboard</a>
-        <a href="#">Login</a>
-    </nav>
+    <a href="/profile" class="profile-link">Profile</a>
+</nav>
 
-<div class="options">
-    <h2>OPTIONS</h2>
-        <ol>
-            <li><a href="/add">Add Expenses</a></li>
-            <li><a href="/view">View Expenses</a></li>
-{#            <li><a href="#">Monthly-wise total expenses</a></li>#}
-            <li><a href="#">category-wise total expenses</a></li>
-{#            <li><a href="#">Total expense</a></li>#}
-            <li><a href="#">View highest expense</a></li>
-            <li><a href="#">View minimum expense</a></li>
-            <li><a href="#">Edit expense</a></li>
-            <li><a href="#">Delete expense</a></li>
-        </ol>
+<div class="page-container">
+  <div class="glass-box">
+    <h3>Expense Manager</h3>
+    <button class="btn">Add Expenses</button>
+    <button class="btn">View Expenses</button>
+    <button class="btn">Monthly-wise total expenses</button>
+    <button class="btn">category-wise total expenses</button>
+    <button class="btn">Total expense</button>
+    <button class="btn">View highest expense</button>
+    <button class="btn">View minimum expense</button>
+    <button class="btn">Edit expense</button>
+    <button class="btn">Delete expense</button>
+  </div>
 </div>
+
 </body>
 </html>

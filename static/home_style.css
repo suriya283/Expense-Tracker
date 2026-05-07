@@ -1,22 +1,28 @@
 body{
-    background-color: powderblue;
+    background-color: #8395a7;
 }
-.navbar{
+.navbar {
     display: flex;
-    justify-content: right;
-    gap: 20px;
-    border: 10px;
-    padding: 20px;
-    background-color: rgb(77, 24, 126);
-    border-radius: 10px;
-    border: solid rgb(65, 9, 117) 5px;
+    justify-content: flex-end; 
+    padding: 15px 30px;
+    background-color: #1e3799;
+
+    border-bottom: 2px solid rgba(255,255,255,0.1); 
 }
-.navbar a{
+
+.navbar a {
     color: white;
     text-decoration: none;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.3); 
+    border-radius: 20px;
+
 }
-.navbar a:hover{
-    color: rgb(187, 154, 217);
+.navbar a:hover {
+    background-color: white;
+    color: #1e3799; 
 }
 
 .options a{
@@ -24,17 +30,44 @@ body{
     color: black;
     font-size: larger;
 }
-.options li:hover{
-    background-color: royalblue;
+
+.page-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;      
+  background-color: #b0e0e6; 
 }
 
-.options li:hover a{
-    color: whitesmoke;
+
+.glass-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;            
 }
 
-.options li:hover::marker{
-    color: whitesmoke;
+.btn {
+  background-color: #0abde3;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition-duration: 0.03s;
+
 }
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
 h2{
     font-weight: bolder;
     font-style: italic;
