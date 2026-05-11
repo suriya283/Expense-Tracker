@@ -1,12 +1,12 @@
-from flask import Flask, request, flash
-from DB import get_db_connection, insert_expense, view_expense
+from flask import request, flash
+from DB import get_db_connection, insert_expense, view_expense, update_expense
 def add_expenses():
     date = request.form['date']
     time = request.form['time']
     category = request.form['category']
     expense = int(request.form['expense'])
     insert_expense(date, time, category, expense)
-    flash("stored successfully")
+    flash("Stored Successfully")
 def view_expenses(view):
         if view == "1":
             return view_expense()
@@ -79,3 +79,10 @@ def view_expenses(view):
     #         print("_"*50)
     # else:
     #     print(f"{view} is invalid! Please enter an valid option.")
+def add_expense(id):
+    date = request.form['date']
+    time = request.form['time']
+    category = request.form['category']
+    expense = int(request.form['expense'])
+    update_expense(date, time, category, expense,id)
+    flash("Update Successfully")

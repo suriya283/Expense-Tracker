@@ -30,6 +30,7 @@
         <th>TIME</th>
         <th>CATEGORY</th>
         <th>EXPENSE</th>
+        <th>ACTION</th>
     </tr>
     {% for record in expense %}
     <tr>
@@ -37,6 +38,14 @@
         <td>{{ record.time }}</td>
         <td>{{ record.category }}</td>
         <td>{{ record.expense }}</td>
+        <td>
+            <a href="/update/{{ record.id }}">
+                <button>Edit</button>
+            </a>
+            <a href="/delete/{{ record.id }}">
+                <button>Delete</button>
+            </a>
+        </td>
     </tr>
     {% endfor %}
 {% endif %}
