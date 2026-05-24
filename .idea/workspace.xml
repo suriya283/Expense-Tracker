@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aba100b-e5fa-428f-ada0-87500cd82530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Expense-Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Expense-Tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="26" />
+    <option name="cachedIndexableFilesCount" value="27" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -208,6 +207,8 @@
       <workItem from="1778680234558" duration="6509000" />
       <workItem from="1778767972672" duration="450000" />
       <workItem from="1779272288133" duration="1249000" />
+      <workItem from="1779557418817" duration="666000" />
+      <workItem from="1779600850056" duration="663000" />
     </task>
     <servers />
   </component>
