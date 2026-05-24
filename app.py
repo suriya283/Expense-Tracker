@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
-from DB import get_db_connection, insert_expense
-from Utilities import add_expenses, view_expenses
+from flask import Flask, render_template, request, redirect, url_for
+from DB import delete_expense
+from Utilities import add_expenses, view_expenses, add_expense
 app=Flask(__name__)
 app.secret_key="secret123"
 @app.route('/')
@@ -24,5 +24,14 @@ def view():
         if user_input == "View All":
             expense=view_expenses('1')
     return render_template('view_expense.html', expense=expense)
+@app.route('/update/<int:id>',methods=['GET','POST'])
+def update(id):
+    if request.method == 'POST':
+        add_expense(id)
+    return render_template('update_expense.html',id=id)
+@app.route('/delete/<int:id>')
+def delete(id):
+    delete_expense(id)
+    return redirect('/view')
 if __name__=='__main__':
     app.run(debug=True)
