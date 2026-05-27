@@ -10,7 +10,7 @@
 <body>
     <h2>View Expense</h2>
     <form method = "POST">
-        <select name="View expense" id="view expense">
+        <select name="View expense" id="view expense" onclick="showInput()">
             <option selected disabled>Select an Option</option>
             <option value="View All">View All Expense</option>
             <option value="View Date">View by Date</option>
@@ -18,36 +18,69 @@
             <option value="View Date and Time">View by Date and Time</option>
             <option value="View Date and category">View by Date and category</option>
         </select>
+        <div id="byDate" style="display: none">
+            <input type="date" name="date">
+        </div>
+        <div id="byTime" style="display: none">
+            <input type="time" name="time">
+        </div>
+        <div id="category" style="display: none">
+            <input type="text" name="category" placeholder="Enter Category">
+        </div>
         <button type="reset">Reset</button>
         <button onclick="window.location.href='{{ url_for('home') }}'" type="button">Go Back</button>
         <button type="submit">Submit</button>
     </form>
 <br>
-{% if expense %}
-<table border="1" class="expense-table">
-    <tr>
-        <th>DATE</th>
-        <th>TIME</th>
-        <th>CATEGORY</th>
-        <th>EXPENSE</th>
-        <th>ACTION</th>
-    </tr>
-    {% for record in expense %}
-    <tr>
-        <td>{{ record.date }}</td>
-        <td>{{ record.time }}</td>
-        <td>{{ record.category }}</td>
-        <td>{{ record.expense }}</td>
-        <td>
-            <a href="/update/{{ record.id }}">
-                <button>Edit</button>
-            </a>
-            <a href="/delete/{{ record.id }}">
-                <button>Delete</button>
-            </a>
-        </td>
-    </tr>
-    {% endfor %}
+<script>
+function showInput(){
+    let value=document.getElementById("view expense").value;
+    document.getElementById("byDate").style.display="none";
+    document.getElementById("byTime").style.display="none";
+    document.getElementById("category").style.display="none";
+    if (value === "View Date"){
+        document.getElementById("byDate").style.display="block";
+    }
+    else if (value === "View Time"){
+        document.getElementById("byTime").style.display="block";
+    }
+    else if (value==="View Date and Time"){
+        document.getElementById("byDate").style.display="block";
+        document.getElementById("byTime").style.display="block";
+    }
+    else if (value==="View Date and category"){
+        document.getElementById("byDate").style.display="block";
+        document.getElementById("category").style.display="block";
+    }
+}
+</script>
+{% if expenses %}
+    <table border="1" class="expense-table">
+        <tr>
+            <th>DATE</th>
+            <th>TIME</th>
+            <th>CATEGORY</th>
+            <th>EXPENSE</th>
+            <th>ACTION</th>
+        </tr>
+        {% for record in expenses %}
+        <tr>
+            <td>{{ record.date }}</td>
+            <td>{{ record.time }}</td>
+            <td>{{ record.category }}</td>
+            <td>{{ record.expense }}</td>
+            <td>
+                <a href="/update/{{ record.id }}">
+                    <button>Edit</button>
+                </a>
+                <a href="/delete/{{ record.id }}">
+                    <button>Delete</button>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+{% else %}
+    Data not found
 {% endif %}
 </table>
 </body>

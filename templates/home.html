@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/home_style.css">
 </head>
 <body>
+{{ result }}
     <nav class="navbar">
     <a href="/profile" class="profile-link">Profile</a>
 </nav>
@@ -15,8 +16,8 @@
 <div class="page-container">
   <div class="glass-box">
     <h3>Expense Manager</h3>
-    <button class="btn">Add Expenses</button>
-    <button class="btn">View Expenses</button>
+    <button class="btn" onclick="window.location.href='/add'">Add Expenses</button>
+    <button class="btn" onclick="window.location.href='/view'">View Expenses</button>
     <button class="btn">Monthly-wise total expenses</button>
     <button class="btn">category-wise total expenses</button>
     <button class="btn">Total expense</button>
@@ -26,6 +27,5 @@
     <button class="btn">Delete expense</button>
   </div>
 </div>
-
 </body>
 </html>

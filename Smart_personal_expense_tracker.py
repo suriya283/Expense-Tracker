@@ -69,7 +69,7 @@ def add_expenses():
             except ValueError:
                 print(f"invalid! Its not allowed string value!")
 
-def view_expenses(view):
+def view_expenses():
     print("1.View all expenses")
     print("2.View by date")
     print("3.View by time")

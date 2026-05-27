@@ -1,5 +1,6 @@
 import mysql.connector
 from mysql.connector import cursor
+from select import select
 
 
 def get_db_connection():
@@ -10,7 +11,23 @@ def get_db_connection():
         database="expense_db"
     )
 print("connected successfully")
-
+def store_user(username,name,password):
+    connection=get_db_connection()
+    cursor=connection.cursor()
+    query="insert into users (username,name,password) values (%s,%s,%s)"
+    values=username,name,password
+    cursor.execute(query,values)
+    connection.commit()
+    cursor.close()
+    connection.close()
+def check_db(user):
+    connection=get_db_connection()
+    cursor=connection.cursor(dictionary=True)
+    cursor.execute("select password from users where username=%s",(user,))
+    hash_pass=cursor.fetchone()
+    cursor.close()
+    connection.close()
+    return hash_pass
 def insert_expense(date,time,category,expense):
     db=get_db_connection()
     cursor=db.cursor()
@@ -23,17 +40,27 @@ def insert_expense(date,time,category,expense):
 
     cursor.close()
     db.close()
-def view_expense():
+
+def view_expense(view=None,date=None,time=None,category=None):
     conn=get_db_connection()
     cursor = conn.cursor(dictionary=True)
-
-    cursor.execute("SELECT id,date,time,category,expense FROM expenses")
+    if view:
+        cursor.execute("SELECT * FROM expenses")
+    elif date and not time:
+        cursor.execute("SELECT * FROM expenses where date=%s",(date,))
+    elif time and not date:
+        cursor.execute("SELECT * FROM expenses where time=%s",(time,))
+    elif date and time:
+        cursor.execute("select * from expenses where date=%s and time=%s",(date,time))
+    elif date and category:
+        cursor.execute("select * from expenses where date=%s and time=%s",(date,category))
+    else:
+        return None
     data=cursor.fetchall()
-
     cursor.close()
     conn.close()
-
     return data
+
 def update_expense(date,time,category,expense,id):
     db=get_db_connection()
     cursor=db.cursor()
@@ -43,6 +70,7 @@ def update_expense(date,time,category,expense,id):
     db.commit()
     cursor.close()
     db.close()
+
 def delete_expense(id):
     db=get_db_connection()
     cursor=db.cursor()
