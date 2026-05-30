@@ -1,6 +1,6 @@
 from unittest import result
 
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 from DB import *
 from Utilities import *
 app=Flask(__name__)
@@ -11,8 +11,11 @@ def login():
 @app.route('/signup',methods=["GET","POST"])
 def sign_up():
     if request.method == "POST":
-        signup_data()
-        return render_template("index.html",result="Successfully Registered")
+        error=signup_data()
+        if result:
+            return render_template("index.html", register_error="User already exist")
+        else:
+            return render_template("index.html",result="Successfully Registered")
     return render_template("index.html")
 @app.route('/signin',methods=['GET',"POST"])
 def sign_in():
@@ -23,6 +26,9 @@ def sign_in():
         else:
             return render_template("index.html",error="Incorrect Username or Password")
     return render_template("index.html")
+@app.route('/home')
+def home():
+    return render_template("home.html")
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method=='POST':
@@ -36,7 +42,7 @@ def view():
     if request.method=='POST':
         user_input=request.form.get('View expense')
         if user_input == "View All":
-            expenses=view_expenses('1')
+            expenses=view_expense(view="all")
         elif user_input == "View Date":
             user_input=request.form.get("date")
             expenses=view_expense(date=user_input)
@@ -49,7 +55,9 @@ def view():
             expenses=view_expense(date=date,time=time)
         elif user_input== "View Date and Category":
             date=request.form.get("date")
-            category=request.form.get("category")
+            category=request.form.get("category").strip().lower()
+            print("date", date)
+            print("category",category)
             expenses=view_expense(date=date,category=category)
         return render_template('view_expense.html', expenses=expenses)
     return render_template('view_expense.html',expenses=[])

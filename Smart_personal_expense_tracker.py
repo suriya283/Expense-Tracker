@@ -438,7 +438,6 @@ def main():
 if __name__=="__main__":
     months = {"01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "June", "07": "July", "08": "Aug",
               "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec"}
-    main()
 # def sort_expense(summary):
 #     for i in range(len(summary)):
 #         date1=summary[i]["date"].split("-")

@@ -1,4 +1,4 @@
-from flask import request, flash
+from flask import request, flash , session
 from DB import *
 from werkzeug.security import check_password_hash
 from werkzeug.security import generate_password_hash
@@ -16,7 +16,8 @@ def signup_data():
     name=request.form["name"]
     password=request.form["password"]
     hash_password=generate_password_hash(password)
-    store_user(user_name,name,hash_password)
+    result=store_user(user_name,name,hash_password)
+    return result
 def add_expenses(id=None):
     if not id:
         date = request.form['date']
@@ -31,7 +32,3 @@ def add_expenses(id=None):
         category = request.form['category']
         expense = int(request.form['expense'])
         update_expense(date, time, category, expense,id)
-
-def view_expenses(view):
-        if view == "1":
-            return view_expense(view="all")

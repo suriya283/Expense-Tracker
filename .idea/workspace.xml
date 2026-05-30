@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aba100b-e5fa-428f-ada0-87500cd82530" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Expense-Tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Expense-Tracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DB.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_personal_expense_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_personal_expense_tracker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/login_page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/login_page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/update_expense.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/update_expense.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/view_expense.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/view_expense.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +82,8 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.DB.executor&quot;: &quot;Run&quot;,
     &quot;Python.Expense Tracker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Smart_personal_expense_tracker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Smart_personal_expense_tracker.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.casting.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -228,6 +224,12 @@
       <workItem from="1779782722751" duration="1535000" />
       <workItem from="1779791732406" duration="1688000" />
       <workItem from="1779799187005" duration="2874000" />
+      <workItem from="1779852414964" duration="10986000" />
+      <workItem from="1779977635454" duration="4657000" />
+      <workItem from="1780047603841" duration="909000" />
+      <workItem from="1780063003714" duration="521000" />
+      <workItem from="1780063654134" duration="3425000" />
+      <workItem from="1780152997062" duration="344000" />
     </task>
     <servers />
   </component>
@@ -248,7 +250,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Expense_Tracker$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1777889226743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Expense_Tracker$Expense_Tracker.coverage" NAME="Expense Tracker Coverage Results" MODIFIED="1778168397941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Expense_Tracker$casting.coverage" NAME="casting Coverage Results" MODIFIED="1779877744863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../All Programs/python" />
     <SUITE FILE_PATH="coverage/Expense_Tracker$DB.coverage" NAME="DB Coverage Results" MODIFIED="1777906280525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Expense_Tracker$Smart_personal_expense_tracker.coverage" NAME="Smart_personal_expense_tracker Coverage Results" MODIFIED="1779603459413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Expense_Tracker$Smart_personal_expense_tracker.coverage" NAME="Smart_personal_expense_tracker Coverage Results" MODIFIED="1780047848921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
